@@ -7,6 +7,8 @@ export default function vendingMachine(cost: number, payment: number) {
   let nickles = 0;
   let pennies = 0;
 
+  const currenyValues = [25, 10, 5, 1];
+
   //we will also need a variable that stores the amount of change which we can get by subtracting payment from cost
   let change = (payment -= cost);
 
